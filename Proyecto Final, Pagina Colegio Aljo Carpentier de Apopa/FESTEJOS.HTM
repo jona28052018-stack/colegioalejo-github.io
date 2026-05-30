@@ -1,0 +1,204 @@
+<HTML>
+<HEAD>
+<TITLE>PAGINA COLEGIO ALEJO CARPENTIER DE APOPA</TITLE>
+<!AUTOR: JHONATAN ELIAS MIRANDA HERNANDEZ>
+
+</HEAD>
+<BODY BGCOLOR= "BLUE">
+<div class="loading-bar" id="loadingBar"></div>
+ <nav>
+        <ul>
+            <li><a href="index.html.htm" class="nav-link active">Inicio</a></li>
+            <li><a href="MISION Y VISION.htm" class="nav-link">Mision y Vision</a></li>
+            <li><a href="AJEDREZ.htm" class="nav-link">Diciplina Ajedrez</a></li>
+            <li><a href="ADMISION.htm" class="nav-link">Admisión</a></li>
+             <li><a href="OBSERVACIONES GENERALES.htm" class="nav-link active">Observaciones Generales</a></li>
+            <li><a href="CUOTAS.htm" class="nav-link">Cuotas</a></li>
+            <li><a href="ORGANIZACION.htm" class="nav-link">Organización</a></li>
+            <li><a href="UNIFORME NIÑAS.htm" class="nav-link">Uniforme niñas</a></li>
+            <li><a href="INIFORME NIÑOS.htm" class="nav-link">Uniforme niños</a></li>
+            <li><a href="ROMOCIONES DE ETUD.htm" class="nav-link">Prom. Estudiantes</a></li>
+            <li><a href="FESTEJOS.htm" class="nav-link">Festejos</a></li>
+              <li><a href="INSTALACIONES.htm" class="nav-link">Instalaciones</a></li>
+            <li><a href="CONTACTE.htm" class="nav-link">Contactenos</a></li>
+             <li><a href="UBI.htm" class="nav-link">Ubicación</a></li>
+             <li><a href="CONVENIOS.htm" class="nav-link">Convenios</a></li>
+              <li><a href="ALEJO.htm" class="nav-link">Alej C.</a></li>
+        </ul>
+    </nav>
+<style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        
+        .loading-bar {
+            position: fixed; top: 0; left: 0;
+            width: 100%; height: 4px;
+            background: #3498db ; z-index: 9999;
+            transition: width 0.3s ease; display: none;
+        }
+        .loading-bar.active { display: block; }
+
+        nav {
+            background: #FFBF00; padding: 1rem 2rem; margin-top: 4px;
+        }
+        nav ul { list-style: none; display: flex; gap: 2rem; }
+        nav a {
+            color: BLACK; text-decoration: none; font-weight: bold;
+            cursor: pointer; transition: color 0.2s;
+        }
+        nav a:hover { color: #3498db; }
+        nav a.active { color:BLACK ; border-bottom:; }
+
+        .contenido { padding: 2rem; }
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background: linear-gradient(135deg, #00aaff 0%, #0088cc 100%);
+  min-height: 100vh;
+  color: #ffd700;
+}
+
+/* Menú naranja de arriba */
+nav {
+  background: linear-gradient(180deg, #ffa500 0%, #ff8c00 100%);
+  padding: 12px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+
+/* Contenedor principal */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Título del colegio */
+.titulo-cole {
+  font-size: 48px;
+  color: #ffff99;
+  margin-bottom: 30px;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Logo del colegio */
+.logo-cole {
+  width: 280px;
+  max-width: 80%;
+  height: auto;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  margin: 30px auto;
+}
+
+/* Texto de info */
+.info-cole {
+  font-size: 28px;
+  color: #ffcc66;
+  margin-top: 50px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Líneas rojas para visión */
+.linea-roja {
+  height: 8px;
+  background: #ff0000;
+  width: 100%;
+  margin: 40px 0;
+}
+
+/* Textos de misión y visión */
+p.mision, p.vision {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #ffcc66;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive para celular */
+@media (max-width: 768px) {
+  nav ul { gap: 10px; }
+  nav a { font-size: 14px; padding: 3px 6px; }
+  .titulo-cole { font-size: 32px; }
+  .logo-cole { width: 200px; }
+  .info-cole { font-size: 20px; margin-top: 30px; }
+  p.mision, p.vision { font-size: 18px; padding: 0 15px; }
+}
+/* Líneas cuatricolor: amarillo, azul, rojo, blanco */
+.linea-cuatricolor {
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(90deg, 
+    #ffff00 0%,      /* Amarillo 25% */
+    #ffff00 25%, 
+    #000080 25%,     /* Azul 50% */
+    #000080 50%, 
+    #ff0000 50%,     /* Rojo 75% */
+    #ff0000 75%, 
+    #ffffff 75%,     /* Blanco 100% */
+    #ffffff 100%
+  );
+  margin: 40px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Versión para celular más delgada */
+@media (max-width: 768px) {
+  .linea-cuatricolor {
+    height: 7px;
+    margin: 25px 0;
+  }
+}
+    </style><BR><BR>
+<H1><CENTER><FONT FACE="ELEPANTH" COLOR="YELLOW" SIZE="55">Festejos</H1></CENTER><BR><BR>
+<H1><CENTER><FONT FACE="ELEPANTH" COLOR="ORANGE" SIZE="10">El colegio se une y toma en cuenta valores como la
+amistad, el respeto y el compañerismo. por esta razón festejamos los días como: El día del niño y la niña,
+las vinbenidas y despedidas y convivios para fortalecer lazos de compañerismo.</H1></CENTER><BR><BR>
+<div class="linea-cuatricolor"></div><BR><BR>
+
+<IMG SRC="F1.JPG" STYLE="DISPLAY: BLOCK; MARGIN: 20PX AUTO; WIDTH: 350PX; HEIGTH: AUTO;"><BR><BR>
+<IMG SRC="F2.JPG" STYLE="DISPLAY: BLOCK; MARGIN: 20PX AUTO; WIDTH: 350PX; HEIGTH: AUTO;"><BR><BR>
+<IMG SRC="F3.JPG" STYLE="DISPLAY: BLOCK; MARGIN: 20PX AUTO; WIDTH: 350PX; HEIGTH: AUTO;"><BR><BR>
+<IMG SRC="F4.JPG" STYLE="DISPLAY: BLOCK; MARGIN: 20PX AUTO; WIDTH: 350PX; HEIGTH: AUTO;"><BR><BR>
+<IMG SRC="F5.JPG" STYLE="DISPLAY: BLOCK; MARGIN: 20PX AUTO; WIDTH: 350PX; HEIGTH: AUTO;"><BR><BR>
+<IMG SRC="F6.JPG" STYLE="DISPLAY: BLOCK; MARGIN: 20PX AUTO; WIDTH: 350PX; HEIGTH: AUTO;"><BR><BR>
+<IMG SRC="F7.JPG" STYLE="DISPLAY: BLOCK; MARGIN: 20PX AUTO; WIDTH: 350PX; HEIGTH: AUTO;"><BR><BR>
+
+
+</BODY>
+</HTML>
